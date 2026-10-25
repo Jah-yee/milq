@@ -1189,6 +1189,7 @@ class Synthesizer:
                         else:
                             # compute the cost, if RUS, also synthesize the recovery operation
                             cost_x, cost_y = 0.0, 0.0
+                            recovery_circuit = None
                             if self.vector_mode == "rus":
                                 # synthesize recovery operation
                                 measured_states = []
